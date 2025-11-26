@@ -40,7 +40,7 @@ if uploaded_file:
         FONT_PATH = "DejaVuSans-Bold.ttf"
 
         try:
-            font = ImageFont.truetype(FONT_PATH, 45)  # Bigger, bold, high DPI
+            font = ImageFont.truetype(FONT_PATH, 40)  # Bigger, bold, high DPI
         except Exception as e:
             st.error(f"Font error: {e}")
             font = ImageFont.load_default()
