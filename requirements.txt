@@ -1,4 +1,6 @@
 streamlit
 pandas
-pystrich
-Pillow
+openpyxl
+pillow
+pylibdmtx
+python-barcode
