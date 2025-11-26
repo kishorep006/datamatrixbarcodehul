@@ -30,7 +30,7 @@ if uploaded_file:
         target_size_px = int(50 * mm_to_inch * 300)  # 50 mm @ 300 DPI
 
         try:
-            font = ImageFont.truetype("arialbd.ttf", 36)
+            font = ImageFont.truetype("arialbd.ttf", 60)
         except:
             font = ImageFont.load_default()
 
