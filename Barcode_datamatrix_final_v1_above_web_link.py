@@ -40,7 +40,7 @@ if uploaded_file:
         FONT_PATH = "DejaVuSans-Bold.ttf"
 
         try:
-            font = ImageFont.truetype(FONT_PATH, 30)  # Bigger, bold, high DPI
+            font = ImageFont.truetype(FONT_PATH, 35)  # Bigger, bold, high DPI
         except Exception as e:
             st.error(f"Font error: {e}")
             font = ImageFont.load_default()
@@ -80,12 +80,12 @@ if uploaded_file:
                 text_w, text_h = draw.textsize(code, font=font)
 
             text_x = (target_size_px - text_w) // 2
-            text_y = 10  # gap from top
+            text_y = 15  # gap from top
 
             draw.text((text_x, text_y), code, fill="black", font=font)
 
             # ---- Paste DataMatrix under text ----
-            barcode_y = text_y + text_h + 10
+            barcode_y = text_y + text_h + 15
             final_img.paste(barcode_img, (0, barcode_y))
 
             # Save PNG into ZIP buffer
