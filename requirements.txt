@@ -4,3 +4,4 @@ openpyxl
 pillow
 pylibdmtx
 python-barcode
+pystrich
